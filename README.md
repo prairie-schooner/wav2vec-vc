@@ -57,8 +57,3 @@ python inference.py \
         -t target_utterance.wav \
         -o output_utterance.wav
 ```
-
-## Reference
-
----
-For indexing and preprocessing code, we refer to [the official implementation of AGAIN-VC](https://github.com/KimythAnly/AGAIN-VC)
