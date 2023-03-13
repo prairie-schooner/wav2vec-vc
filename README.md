@@ -1,6 +1,7 @@
 # Wav2vec-VC
 
 ---
+
 This is the official implementation of the paper "Wav2vec-VC: Voice conversion via hidden representations of wav2vec 2.0".
 This work utilizes all-layer hidden representations of wav2vec 2.0.
 We aggregate those representations using the weighted-sum of them. 
@@ -16,6 +17,7 @@ we freeze and embed them into Wav2vec-VC.
 ---
 
 ### Indexing
+
 Before preprocessing, we can configure 1) the number of speakers 
 and 2) the number of utterances per a speaker. Given such configuration, 
 the train/dev set is split.
@@ -27,6 +29,7 @@ python index.py \
 ```
 
 ### Preprocessing
+
 To feed all-layer hidden representations of wav2vec 2.0, we need to 
 extract them from the pre-trained wav2vec 2.0 base model.
 ```
@@ -38,6 +41,7 @@ python preprocess.py \
 ```
 
 ### Training the model
+
 Train the Wav2vec-VC model using pre-trained speaker/content layer weights.
 ```
 python train.py \
@@ -48,6 +52,7 @@ python train.py \
 ```
 
 ### Inference
+
 Infer the voice-converted utterance. 
 ```
 python inference.py \
