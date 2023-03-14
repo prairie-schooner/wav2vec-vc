@@ -5,7 +5,7 @@ This work utilizes all-layer hidden representations of wav2vec 2.0.
 We aggregate those representations using the weighted-sum of them. 
 The speaker/content layer weights are pre-trained to perform 
 the speaker/content-related speech task. Given those layer weights, 
-we freeze and embed them into Wav2vec-VC. 
+we freeze and embed them into the speaker/content encoder of Wav2vec-VC. 
 
 
 
