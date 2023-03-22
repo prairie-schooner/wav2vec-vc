@@ -1,5 +1,6 @@
 # Wav2vec-VC
 
+---
 This is the official implementation of the paper "Wav2vec-VC: Voice conversion via hidden representations of wav2vec 2.0".
 This work utilizes all-layer hidden representations of wav2vec 2.0.
 We aggregate those representations using the weighted-sum of them. 
@@ -9,7 +10,9 @@ we freeze and embed them into Wav2vec-VC.
 
 
 
-## Usage
+##Usage
+
+---
 
 ### Indexing
 Before preprocessing, we can configure 1) the number of speakers 
@@ -53,3 +56,5 @@ python inference.py \
         -t target_utterance.wav \
         -o output_utterance.wav
 ```
+
+
